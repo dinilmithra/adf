@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">Employee</property>
+      <property
+         name="page">/com/dm/adf/common/baseapp/testvc/view/hr/pages/Employee.jspx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>Employee&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">112.79883</property>
+      <property
+         name="x">252.5</property>
+   </View>
+</SDM>

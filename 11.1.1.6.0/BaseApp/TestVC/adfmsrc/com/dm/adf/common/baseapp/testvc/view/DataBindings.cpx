@@ -8,20 +8,20 @@
     <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
   </definitionFactories>
   <pageMap>
-    <page path="/Home.jspx"
-          usageId="com_dm_adf_common_baseapp_basevc_HomePageDef"/>
     <page path="/DBHome.jspx"
           usageId="com_dm_adf_common_baseapp_basevc_DBHomePageDef"/>
-    <page path="/com/dm/adf/common/baseapp/testvc/view/hr/employees-view.jsff"
+    <page path="/com/dm/adf/common/baseapp/testvc/view/hr/fragments/employees-view.jsff"
           usageId="com_dm_adf_common_baseapp_basevc_employees_viewPageDef"/>
+    <page path="/com/dm/adf/common/baseapp/testvc/view/hr/pages/Employee.jspx"
+          usageId="com_dm_adf_common_baseapp_testvc_view_EmployeePageDef"/>
   </pageMap>
   <pageDefinitionUsages>
-    <page id="com_dm_adf_common_baseapp_basevc_HomePageDef"
-          path="com.dm.adf.common.baseapp.testvc.view.pageDefs.hr.HomePageDef"/>
     <page id="com_dm_adf_common_baseapp_basevc_DBHomePageDef"
           path="com.dm.adf.common.baseapp.testvc.view.pageDefs.hr.DBHomePageDef"/>
     <page id="com_dm_adf_common_baseapp_basevc_employees_viewPageDef"
           path="com.dm.adf.common.baseapp.testvc.view.pageDefs.hr.employees_viewPageDef"/>
+    <page id="com_dm_adf_common_baseapp_testvc_view_EmployeePageDef"
+          path="com.dm.adf.common.baseapp.testvc.view.hr.pages.EmployeePageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="PrgHRServiceDataControl"
