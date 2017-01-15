@@ -54,7 +54,7 @@
       <string v="oracle.adfdtinternal.model.ide.settings.ADFMSettings/adfmContentSet"/>
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
    </list>
-   <value n="defaultPackage" v="com.dm.adf.common.baseapp.basevc"/>
+   <value n="defaultPackage" v="com.dm.adf.common.baseapp.testvc"/>
    <hash n="oracle.ide.model.DependencyConfiguration">
       <list n="dependencyList">
          <hash>
