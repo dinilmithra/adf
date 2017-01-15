@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="employees-flow-definition">
+    <template-reference>
+      <document id="__1">/WEB-INF/controllers/templates/task-flow-template.xml</document>
+      <id id="__2">task-flow-template</id>
+    </template-reference>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>
