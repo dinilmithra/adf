@@ -17,11 +17,11 @@
   </pageMap>
   <pageDefinitionUsages>
     <page id="com_dm_adf_common_baseapp_basevc_HomePageDef"
-          path="com.dm.adf.common.baseapp.testvc.pageDefs.HomePageDef"/>
+          path="com.dm.adf.common.baseapp.testvc.view.pageDefs.hr.HomePageDef"/>
     <page id="com_dm_adf_common_baseapp_basevc_DBHomePageDef"
-          path="com.dm.adf.common.baseapp.testvc.pageDefs.DBHomePageDef"/>
+          path="com.dm.adf.common.baseapp.testvc.view.pageDefs.hr.DBHomePageDef"/>
     <page id="com_dm_adf_common_baseapp_basevc_employees_viewPageDef"
-          path="com.dm.adf.common.baseapp.testvc.view.hr.employees_viewPageDef"/>
+          path="com.dm.adf.common.baseapp.testvc.view.pageDefs.hr.employees_viewPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="PrgHRServiceDataControl"
