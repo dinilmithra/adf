@@ -5,6 +5,10 @@
       <document id="__1">/WEB-INF/controllers/templates/task-flow-template.xml</document>
       <id id="__2">task-flow-template</id>
     </template-reference>
+    <default-activity id="__3">employees-view</default-activity>
+    <view id="employees-view">
+      <page>/view/hr/employees-view.jsff</page>
+    </view>
     <use-page-fragments/>
   </task-flow-definition>
 </adfc-config>
