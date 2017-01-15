@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.62.29" id="DataBindings" SeparateXMLFiles="false"
+             Package="com.dm.adf.common.baseapp.basevc" ClientType="Generic">
+  <pageMap>
+    <page path="/Home.jspx"
+          usageId="com_dm_adf_common_baseapp_basevc_HomePageDef"/>
+    <page path="/DBHome.jspx"
+          usageId="com_dm_adf_common_baseapp_basevc_DBHomePageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_dm_adf_common_baseapp_basevc_HomePageDef"
+          path="com.dm.adf.common.baseapp.basevc.pageDefs.HomePageDef"/>
+    <page id="com_dm_adf_common_baseapp_basevc_DBHomePageDef"
+          path="com.dm.adf.common.baseapp.basevc.pageDefs.DBHomePageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="PrgHRServiceDataControl"
+                     Package="com.dm.adf.common.baseapp.testmodel.test.service"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+    <BC4JDataControl id="HRServiceDataControl"
+                     Package="com.dm.adf.common.baseapp.testmodel.hr.service"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="HRServiceLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

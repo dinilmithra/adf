@@ -1,0 +1,12 @@
+package com.dm.adf.common.baseapp.basemodel.framework.extension.view.prg;
+
+/**
+ * This can hold  valid transaction context which needs to be passed to the
+ * third party service one data manilpulation.
+ * As of now its left blank :)
+ */
+public class DefaultTransactionContext implements TransactionContext {
+    public DefaultTransactionContext() {
+        super();
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.dm.adf.common.baseapp.testmodel.test.service.PrgHRService">
+      <AppModuleConfig DeployPlatform="LOCAL" JDBCName="HR"
+                       jbo.project="com.dm.adf.common.baseapp.testmodel.TestModel"
+                       name="AppModuleLocal"
+                       SessionClass="com.dm.adf.common.baseapp.basemodel.framework.extension.am.prg.CustomSessionImpl"
+                       ApplicationName="com.dm.adf.common.baseapp.testmodel.test.service.PrgHRService">
+         <AM-Pooling jbo.ampool.connectionstrategyclass="com.dm.adf.common.baseapp.basemodel.framework.extension.am.prg.NoDatabaseConnectionStrategy"
+                     PoolClassName="com.dm.adf.common.baseapp.basemodel.framework.extension.am.prg.NoDatabaseApplicationPoolImpl"/>
+         <Database jbo.locking.mode="optimistic"/>
+         <Security AppModuleJndiName="com.dm.adf.common.baseapp.testmodel.test.service.PrgHRService"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="AppModuleShared" DeployPlatform="LOCAL"
+                       JDBCName="HR"
+                       jbo.project="com.dm.adf.common.baseapp.testmodel.TestModel"
+                       java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory"
+                       ApplicationName="com.dm.adf.common.baseapp.testmodel.test.service.PrgHRService">
+         <AM-Pooling jbo.ampool.isuseexclusive="false"
+                     jbo.ampool.maxpoolsize="1"/>
+         <Security AppModuleJndiName="com.dm.adf.common.baseapp.testmodel.test.service.PrgHRService"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
