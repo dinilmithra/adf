@@ -7,7 +7,7 @@
       <property
          name="activityId">employees-view</property>
       <property
-         name="page">/view/hr/employees-view.jsff</property>
+         name="page">/com/dm/adf/common/baseapp/testvc/view/hr/employees-view.jsff</property>
       <property
          name="start">true</property>
       <property
@@ -17,8 +17,8 @@
       <property
          name="y">131.29883</property>
       <property
-         name="x">267.0</property>
-      <property
          name="pageFragment">true</property>
+      <property
+         name="x">267.0</property>
    </View>
 </SDM>

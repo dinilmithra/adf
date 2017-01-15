@@ -7,7 +7,7 @@
     </template-reference>
     <default-activity id="__3">employees-view</default-activity>
     <view id="employees-view">
-      <page>/view/hr/employees-view.jsff</page>
+      <page>/com/dm/adf/common/baseapp/testvc/view/hr/employees-view.jsff</page>
     </view>
     <use-page-fragments/>
   </task-flow-definition>

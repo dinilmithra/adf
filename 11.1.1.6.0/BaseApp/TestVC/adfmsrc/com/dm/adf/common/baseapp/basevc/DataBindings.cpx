@@ -2,17 +2,26 @@
 <Application xmlns="http://xmlns.oracle.com/adfm/application"
              version="11.1.1.62.29" id="DataBindings" SeparateXMLFiles="false"
              Package="com.dm.adf.common.baseapp.basevc" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
   <pageMap>
     <page path="/Home.jspx"
           usageId="com_dm_adf_common_baseapp_basevc_HomePageDef"/>
     <page path="/DBHome.jspx"
           usageId="com_dm_adf_common_baseapp_basevc_DBHomePageDef"/>
+    <page path="/com/dm/adf/common/baseapp/testvc/view/hr/employees-view.jsff"
+          usageId="com_dm_adf_common_baseapp_basevc_employees_viewPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="com_dm_adf_common_baseapp_basevc_HomePageDef"
           path="com.dm.adf.common.baseapp.basevc.pageDefs.HomePageDef"/>
     <page id="com_dm_adf_common_baseapp_basevc_DBHomePageDef"
           path="com.dm.adf.common.baseapp.basevc.pageDefs.DBHomePageDef"/>
+    <page id="com_dm_adf_common_baseapp_basevc_employees_viewPageDef"
+          path="com.dm.adf.common.baseapp.testvc.view.hr.employees_viewPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="PrgHRServiceDataControl"
