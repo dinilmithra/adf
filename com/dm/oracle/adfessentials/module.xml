@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.3" name="com.dm.oracle.adfessentials">
+    <resources>
+        <resource-root path="DM.jar"/>   
+       
+        
+        <resource-root path="adf-share-support.jar"/>       
+        <resource-root path="adf-controller-security.jar"/>
+        <resource-root path="adflogginghandler.jar"/>
+        <resource-root path="adf-share-base.jar"/>
+        <resource-root path="adf-share-ca.jar"/>
+        <resource-root path="adfsharembean.jar"/>
+        <resource-root path="adf-share-multi-tenancy.jar"/>
+        <resource-root path="adf-share-security.jar"/>
+        <resource-root path="com.oracle.classloader.pcl.jar"/>
+        <resource-root path="com.oracle.http_client.http_client.jar"/>
+        <resource-root path="com.oracle.ojsp.globaltldcache.jar"/>
+        <resource-root path="com.oracle.ojsp.web-common.jar"/>
+        <resource-root path="com.oracle.webservices.fmw.oc4j-ws-support-impl.jar"/>
+        <resource-root path="com.oracle.webservices.fmw.web-common-schemas-impl.jar"/>
+        <resource-root path="commons-el.jar"/>
+        <resource-root path="dms.jar"/>
+        <resource-root path="javamodel-rt.jar"/>
+        <resource-root path="javatools-jndi-local.jar"/>
+        <resource-root path="javatools-nodeps.jar"/>
+        <resource-root path="jrf-api.jar"/>
+        <resource-root path="jsp-el-api.jar"/>
+        <resource-root path="mdsrt.jar"/>
+        <resource-root path="oicons.jar"/>
+        <resource-root path="ojdbc7dms.jar"/>
+        <resource-root path="ojdl.jar"/>
+        <resource-root path="ojdl2.jar"/>
+        <resource-root path="oracle.logging-utils.jar"/>
+        <resource-root path="oracle.xdb.jar"/>
+        <resource-root path="oracle-el.jar"/>
+        <resource-root path="orai18n.jar"/>
+        <resource-root path="orai18n-mapping.jar"/>
+        <resource-root path="orai18n-utility.jar"/>
+        <resource-root path="org.apache.bcel_5.1.jar"/>
+        <resource-root path="org.apache.commons.beanutils_1.8.3.jar"/>
+        <resource-root path="org.apache.commons.digester_1.8.jar"/>
+        <resource-root path="org.apache.commons.logging_1.2.jar"/>
+        <resource-root path="resourcebundle.jar"/>
+        <resource-root path="share.jar"/>
+        <resource-root path="xmlef.jar"/>
+        <resource-root path="xmlparserv2_sans_jaxp_services.jar"/>
+    </resources>
+    <dependencies></dependencies>
+</module>
