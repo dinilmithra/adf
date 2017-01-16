@@ -117,6 +117,8 @@
          <string v=".xsl"/>
          <string v=".xsd"/>
          <string v=".jpx"/>
+         <string v=".rpx"/>
+         <string v=".bcs"/>
       </list>
       <value n="internalEncoding" v="Cp1252"/>
       <list n="Javac.commandline.optionlist">
@@ -186,25 +188,13 @@
    </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
       <hash n="javaContentSet">
-         <list n="constituent-sets">
-            <hash>
-               <list n="pattern-filters">
-                  <string v="+**"/>
-               </list>
-               <list n="url-path">
-                  <url path="src/"/>
-               </list>
-            </hash>
-            <hash>
-               <list n="pattern-filters">
-                  <string v="+**"/>
-               </list>
-               <list n="url-path">
-                  <url path="../BaseModel/src/"/>
-               </list>
-            </hash>
+         <list n="constituent-sets"/>
+         <list n="pattern-filters">
+            <string v="+**"/>
          </list>
-         <list n="url-path"/>
+         <list n="url-path">
+            <url path="src/"/>
+         </list>
       </hash>
    </hash>
    <hash n="oracle.jdeveloper.runner.RunConfigurations">
