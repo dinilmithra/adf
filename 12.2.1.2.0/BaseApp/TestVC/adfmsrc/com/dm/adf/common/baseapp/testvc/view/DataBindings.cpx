@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.62.29" id="DataBindings" SeparateXMLFiles="false"
+             Package="com.dm.adf.common.baseapp.testvc.view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/DBHome.jsf"
+          usageId="com_dm_adf_common_baseapp_basevc_DBHomePageDef"/>
+    <page path="/com/dm/adf/common/baseapp/testvc/view/hr/fragments/employees-view.jsff"
+          usageId="com_dm_adf_common_baseapp_basevc_employees_viewPageDef"/>
+    <page path="/com/dm/adf/common/baseapp/testvc/view/hr/pages/Employee.jsf"
+          usageId="com_dm_adf_common_baseapp_testvc_view_EmployeePageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_dm_adf_common_baseapp_basevc_DBHomePageDef"
+          path="com.dm.adf.common.baseapp.testvc.view.pageDefs.hr.DBHomePageDef"/>
+    <page id="com_dm_adf_common_baseapp_basevc_employees_viewPageDef"
+          path="com.dm.adf.common.baseapp.testvc.view.pageDefs.hr.employees_viewPageDef"/>
+    <page id="com_dm_adf_common_baseapp_testvc_view_EmployeePageDef"
+          path="com.dm.adf.common.baseapp.testvc.view.hr.pages.EmployeePageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="PrgHRServiceDataControl"
+                     Package="com.dm.adf.common.baseapp.testmodel.test.service"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+    <BC4JDataControl id="HRServiceDataControl"
+                     Package="com.dm.adf.common.baseapp.testmodel.hr.service"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="HRServiceLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

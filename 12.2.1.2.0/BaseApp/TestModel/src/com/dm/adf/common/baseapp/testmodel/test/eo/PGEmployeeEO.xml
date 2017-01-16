@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PGEmployeeEO"
+  Version="11.1.1.62.29"
+  InheritPersonalization="true"
+  DBObjectType="table"
+  DBObjectName="PGEMPLOYEEEO"
+  AliasName="PGEmployeeEO"
+  BindingStyle="OracleName"
+  UseGlueCode="false"
+  RowClass="com.dm.adf.common.baseapp.testmodel.test.eo.PGEmployeeEOImpl"
+  xmlns:validation="http://xmlns.oracle.com/adfm/validation">
+  <DesignTime>
+    <AttrArray Name="_publishEvents"/>
+    <Attr Name="_superClass"
+      Value="com.dm.adf.common.baseapp.basemodel.framework.extension.entity.prg.PrgEntityObjectImpl"/>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <Attribute
+    Name="EmployeeId"
+    IsUpdateable="while_insert"
+    IsNotNull="true"
+    ColumnName="EMPLOYEE_ID"
+    SQLType="FLOAT"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="PGEMPLOYEEEO"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="FirstName"
+    Precision="80"
+    ColumnName="FIRST_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PGEMPLOYEEEO"/>
+  <Attribute
+    Name="LastName"
+    Precision="80"
+    ColumnName="LAST_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PGEMPLOYEEEO"/>
+  <Attribute
+    Name="Email"
+    Precision="80"
+    ColumnName="EMAIL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PGEMPLOYEEEO">
+    <validation:RegExpValidationBean
+      Name="Email_Rule_0"
+      ResId="PLEASE_ENTER_A_VALID_EMAIL"
+      OnAttribute="Email"
+      Pattern="[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}"
+      Flags="CaseInsensitive"
+      Inverse="false"/>
+  </Attribute>
+  <Attribute
+    Name="DepartmentId"
+    Precision="80"
+    ColumnName="DEPARTMENT_ID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PGEMPLOYEEEO"/>
+  <Key
+    Name="PgemployeeeoEmployeeIdCheck">
+    <DesignTime>
+      <Attr Name="_isNotNull" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PGEMPLOYEEEO_EMPLOYEE_ID_CHECK"/>
+      <Attr Name="_checkCondition" Value='"EMPLOYEE_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item
+        Value="com.dm.adf.common.baseapp.testmodel.test.eo.PGEmployeeEO.EmployeeId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PgemployeeeoPrimaryKey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="PGEMPLOYEEEO_PRIMARY_KEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item
+        Value="com.dm.adf.common.baseapp.testmodel.test.eo.PGEmployeeEO.EmployeeId"/>
+    </AttrArray>
+  </Key>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="com.dm.adf.common.baseapp.testmodel.TestModelBundle"/>
+  </ResourceBundle>
+</Entity>
